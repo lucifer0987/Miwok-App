@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    tools:ignore="RtlSymmetry"
+    android:background="@color/tan_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:layout_width="@dimen/list_item_height"
+            android:layout_height="@dimen/list_item_height"
+            android:id="@+id/image"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/text_container"
+            android:orientation="vertical"
+            android:layout_toEndOf="@id/image"
+            android:paddingStart="16dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/miwok"
+                android:text="@string/default_miwok"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/English"
+                android:text="@string/default_english"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/playButton"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/baseline_play_arrow_white_18dp"
+            android:paddingEnd="16dp"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>
